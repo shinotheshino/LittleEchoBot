@@ -1,9 +1,15 @@
-import * as eris from "eris";
+import Eris, * as eris from "eris";
 import * as parser from "discord-command-parser";
 
 import config from "./config";
 
-const client = new eris.Client(config.token, {});
+const client = new eris.Client(config.token, {
+  intents:
+    eris.Constants.Intents.guilds |
+    eris.Constants.Intents.guildMembers |
+    eris.Constants.Intents.guildMessages,
+  autoreconnect: true,
+});
 
 client.on("messageCreate", async message => {
   const parsed = parser.parse(message, config.prefix);
