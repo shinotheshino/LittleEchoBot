@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "discord-command-parser": "^1.5.3",
+    "eris": "^0.14.0",
+    "esm": "^3.2.25",
+    "js-yaml": "^4.0.0",
+    "superstruct": "^0.14.0"
+  }
+}

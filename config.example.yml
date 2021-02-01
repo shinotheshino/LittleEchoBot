@@ -1,0 +1,10 @@
+token: token_goes_here
+server: "snowflake_goes_here"
+welcomechannel: "snowflake_goes_here"
+autoroles:
+  - "snowflake_goes_here"
+modroles:
+  - "snowflake_goes_here"
+  - "snowflake_goes_here"
+  - "snowflake_goes_here"
+prefix: "%"
